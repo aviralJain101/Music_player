@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="232dp"
+        android:layout_height="192dp"
+        android:src="@drawable/oval"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        tools:srcCompat="@drawable/oval" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_marginTop="10dp"
+        android:layout_width="320dp"
+        android:src="@drawable/rectangle"
+        android:layout_height="5dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/colorPrimaryDark"
+        app:srcCompat="@drawable/rectangle" />
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="10dp"
+        android:text="GOT Theme" />
+
+    <SeekBar
+        android:id="@+id/progress"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:inputType="time"
+            android:id="@+id/time"
+            android:layout_marginLeft="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="295dp"
+            android:text="01:40"
+            android:inputType="time"
+            android:id="@+id/timeLeft"/>
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="135dp">
+
+        <Button
+            android:id="@+id/prevButton"
+            android:layout_width="48dp"
+            android:layout_height="37dp"
+            android:background="@android:drawable/ic_media_previous" />
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="48dp"
+            android:layout_height="37dp"
+            android:background="@android:drawable/ic_media_play" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="48dp"
+            android:layout_height="37dp"
+            android:background="@android:drawable/ic_media_next" />
+    </TableRow>
+
+
+</LinearLayout>
